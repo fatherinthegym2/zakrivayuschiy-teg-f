@@ -11,6 +11,117 @@
 */
 
 .page {
+  margin-block-start: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*стоковые найтсройки*/
   min-inline-size: 320px;
   min-block-size: 100dvb;
+
+  /*Шрифты и фон*/
+  font-family: var(--font-Inter), sans-serif;
+  font-variation-settings: "wght" 400;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  inline-size: clamp(375px, 80vw, 700px);
+  border: 2px solid black;
+  background-color: white;
+  min-block-size: clamp(327px, 50vh, 368px);
+  margin-block-end: 100px;
+
+
+  /*Шрифты и фон*/
+  font-family: var(--font-Press), sans-serif;
+
+}
+
+.title {
+  font-size: clamp(49px, 8.5vw, 65px);
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: clamp(14px, 3vw, 23px);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  inline-size: clamp(375px, 80vw, 696px);
+  block-size: clamp(375px, 80vw, 959px);
+  background-color: white;
+  border: 2px solid black;
+}
+
+.card_title-box {
+
+
+}
+
+.card-title {
+  font-family: var(--font-Inter);
+  font-variation-settings: "wght" 700;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.card-image {
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  background-image: url('../images/bus.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image::before {
+  content: '</HTML>';
+  font-family: var(--font-Press);
+  display: flex;
+  font-size: 14px;
+  mix-blend-mode: hard-light; 
+  -webkit-text-stroke: 1px #fff;
+  opacity: 50%;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px 27px;
+}
+
+.button-box {
+  display: flex;
+  inline-size: 100%;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
+
+@supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff))  {
+  .card-image::before {
+    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
+  }
 }
