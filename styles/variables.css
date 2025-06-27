@@ -23,4 +23,17 @@
       #1a1a1a
     );
 
+
+
+    --contour-color: #000;
+    --animation-fill-color: #ff0000;
+    --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --subtitle-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --card-title-font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+    --background-color: #fff;
+    --small-font-size: 14px;
+    --small-font-weight: 400;
+    --big-font-weight: 700;
+    --button-text-color: #fff;
+
 }

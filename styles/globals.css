@@ -33,13 +33,13 @@ a {
 button,
 input {
   color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
   border: none;
   background: none;
   box-shadow: none;
   text-shadow: none;
   appearance: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 ul,
