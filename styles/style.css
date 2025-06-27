@@ -259,8 +259,9 @@
 .card__icon-button{
   display: flex;
   align-items: end;
-  height: 38px; /* Совпадает с высотой соседней кнопки */
+  height: 38px;
   min-width: 38px;
+  transition: border-color 0.3s ease;
   border: 2px solid transparent;
   cursor: pointer;
 }
